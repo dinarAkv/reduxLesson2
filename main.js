@@ -24,3 +24,10 @@ store.subscribe(() => {
 
 store.dispatch({ type: 'ADD_TRACK', payload: 'Smells like spirit' });
 store.dispatch({ type: 'ADD_TRACK', payload: 'Enter Sandman' });
+
+const addTrackBtn = document.querySelectorAll('.addTrack')[0];
+
+addTrackBtn.addEventListener('click', () => {
+  const trackName = document.querySelectorAll('.trackInput')[0].value;
+  console.log('trackName', trackName);
+})
